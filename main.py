@@ -121,6 +121,6 @@ async def stop(ctx):
 with open("config.json", "r") as config_file: # SKID IT 😂 || Made By GhoSty 
     config = ghostop.load(config_file) # SKID IT 😂 || Made By GhoSty 
 
-ghostyopaf = (config["TOKEN"]) # SKID IT 😂 || Made By GhoSty 
+ghostyopaf = os.environ.get("TOKEN")  # SKID IT 😂 || Made By GhoSty 
 ghosty.run(ghostyopaf, bot=False)
 # SKID IT 😂 || Made By GhoSty 
